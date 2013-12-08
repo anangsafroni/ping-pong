@@ -9,18 +9,15 @@
 </head>
 <body>
 <header>
-	<h1>Pong!</h1>
-	<p>Pong implemented with help of the new canvas and audio elements in HTML5!</p>
 </header>
-
 <article>
 	<div id="gamediv">
 		<div id="titleScreen">
-			<h1>Pong!</h1>
-			<p>This game is based on the HTML5 elements <b>canvas</b> and <b>audio</b>. With some simple javascript to make it work.</p>
-			<p>To play this game you need a modern web browser with support for HTML5. Audio only works with Firefox 3.5+ at the moment.</p>
-			<p class="vcard">Made by <a href="http://daverix.net/" class="url fn" target="_top" rel="me">David Laurell</a></p>
-			<button id="playButton">Play!</button>
+			<center><h1>Ping-Pong!</h1></center>
+			<p>Permainan ini didasarkan pada HTML5 elemen kanvas dan suara.  Dengan beberapa javascript sederhana untuk membuatnya bekerja.</p>
+			<p>Untuk memainkan permainan ini Anda memerlukan browser web yang modern dengan dukungan untuk HTML5.  Audio hanya bekerja dengan Google Chrome dan Firefox saat ini.</p>
+			<center><p class="vcard">Dibuat oleh<a href="http://daverix.net/" class="url fn" target="_top" rel="me"> David Laurell</a></p></center>
+			<center><button id="playButton">Mulai!</button></center>
 		</div>
 		<div id="playScreen">
 			<canvas width="640" height="360" id="gameCanvas">
@@ -31,18 +28,15 @@
 			<div id="computerScore">0</div>
 			<div id="playerScore">0</div>
 			<div class="ingamebuttons">
-				<button id="pauseButton">Pause</button>
-				<button id="soundButton">Turn off sound</button>
+				<button id="pauseButton">Istirahat</button>
+				<button id="soundButton">Matikan Suara</button>
 			</div>
-			<div id="pauseText">Paused</div>
+			<div id="pauseText">Ngopi Dulu Rek!!</div>
 		</div>
 	</div>
 </article>
 
-<footer>
-	<p>Tested in Firefox (version 3.5 and 3), Chromium (version 4.0.202.0) and Internet Explorer 8. Audio only work in Firefox 3.5 when I tested. Firefox 3.5 is recommended for running the game. Canvas support for Internet Explorer comes from <a href="http://code.google.com/p/explorercanvas/">ExplorerCanvas</a></p>
-	<p>For more cool stuff like this visit <a href="http://daverix.net">Daverix.net</a></p>
-</footer>
+<footer></footer>
 
 <audio id="bounceLeft" autobuffer>
 	<source src="ping.wav" type="audio/x-wav" />

@@ -11,7 +11,7 @@
 	margin: 0 auto;
 	width: 640px;
 	height: 360px;
-	background: #150000;
+	background: #333;
 	padding: 10px;
 }
 
@@ -19,12 +19,12 @@
 	Title screen
 */
 #titleScreen {
-	border: 2px solid #333;
+	border: 1px solid #333;
 	padding: 1em;
 	margin: 0 auto;
-	margin-top: 3em;
+	margin-top: 2em;
 	width: 50%;
-	text-align: center;
+	text-align: justify;
 }
 #titleScreen h1 {
 	font-weight: normal;
@@ -34,12 +34,13 @@
 #titleScreen p {
 	font-weight: bold;
 	font-size: 0.8em;
-	color: #ccc;
-	text-align: left;
+	color: #ffc;
+	text-align: justify;
 }
 
 #titleScreen .vcard {
 	font-size: 0.8em;
+	text-align: center;
 }
 #titleScreen .vcard a {
 	color: #ccc;
@@ -90,10 +91,10 @@
 #pauseText {
 	display: none;
 	position: relative;
-	top: -360px;
+	top: -220px; 
 	left: 0;
-	font-size: 3em;
-	margin: 3em auto;
+	font-size: 2em;
+	margin: 1em auto;
 	opacity:0.4;filter:alpha(opacity=40);
 	color: #ffc;
 	text-align: center;
