@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pong in HTML5! | Daverix.net</title>
+	<meta name="description" content="The classic Pong game made with the HTML5 elements canvas and audio!" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css" />
+	<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+</head>
+<body>
+<header>
+</header>
+<article>
+	<div id="gamediv">
+		<div id="titleScreen">
+			<center><h1>Ping-Pong!</h1></center>
+			<p>Permainan ini didasarkan pada HTML5 elemen kanvas dan suara.  Dengan beberapa javascript sederhana untuk membuatnya bekerja.</p>
+			<p>Untuk memainkan permainan ini Anda memerlukan browser web yang modern dengan dukungan untuk HTML5.  Audio hanya bekerja dengan Google Chrome dan Firefox saat ini.</p>
+			<center><p class="vcard">Dibuat oleh<a href="http://anangsafroni.web.id/" class="url fn" target="_top" rel="me"> David Laurell</a></p></center>
+			<center><button id="playButton">Mulai!</button></center>
+		</div>
+		<div id="playScreen">
+			<canvas width="640" height="360" id="gameCanvas">
+				<p>Your browser <b>does not</b> support HTML5!</p>
+				<p>Download <a href="http://firefox.com">Firefox3.6</a> for the full experience or another with good HTML5 support. The game is tested in Firefox 3.0+, Chromium 4+, Chrome 4 beta, Opera and Internet Explorer 8. To get the audio to work you are required to use Firefox for the moment.</p>
+				<p>Visit the <a href="http://daverix.net/projects/pong/">project page</a> for more info.</p>
+			</canvas>
+			<div id="computerScore">0</div>
+			<div id="playerScore">0</div>
+			<div class="ingamebuttons">
+				<button id="pauseButton">Istirahat</button>
+				<button id="soundButton">Matikan Suara</button>
+			</div>
+			<div id="pauseText">Ngopi Dulu Rek!!</div>
+		</div>
+	</div>
+</article>
+
+<footer></footer>
+
+<audio id="bounceLeft" autobuffer>
+	<source src="ping.wav" type="audio/x-wav" />
+	<source src="ping.ogg" type="audio/ogg" />
+</audio>
+<audio id="bounceRight" autobuffer>
+	<source src="pong.wav" type="audio/x-wav" />
+	<source src="pong.ogg" type="audio/ogg" />
+</audio>
+<audio id="bounceWall" autobuffer>
+	<source src="bom.wav" type="audio/x-wav" />
+	<source src="bom.ogg" type="audio/ogg" />
+</audio>
+
+<script type="text/javascript" src="game.js"></script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8667386-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
+</html>
